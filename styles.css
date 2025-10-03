@@ -36,12 +36,18 @@ body {
 }
 
 .panel .img-text {
+  
   font-size: 15px;
   padding: 20px;
   width: 100%;
+  opacity: 0;              /* hide text by default */
+  transition: opacity 0.5s ease-in;
+  text-align: center;
  
 }
-
+.panel.active .img-text {
+  opacity: 1;
+}
 .panel.active {
   flex: 5;
 }
